@@ -1,0 +1,18 @@
+apply plugin: 'scala'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.scala-lang:scala-library:2.12.3'
+    compile 'io.gatling.highcharts:gatling-charts-highcharts:2.3.1'
+}
+
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src/main/scala', 'user-files']
+        }
+    }
+}
